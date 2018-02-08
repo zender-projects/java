@@ -1,6 +1,8 @@
 package com.zd.learn.java.basic.thread.cooperation;
 
 
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
 class Car{
@@ -41,7 +43,7 @@ class WaxOn implements Runnable {
         try{
             while(!Thread.interrupted()) {
                 System.out.println("Wax ON!");
-                TimeUnit.SECONDS.sleep(2);
+                TimeUnit.SECONDS.sleep(1);
                 car.waxed();  //抛光完成
                 //等待打蜡
                 car.waitForBuffing();
@@ -66,7 +68,7 @@ class WaxOff implements Runnable {
             while(!Thread.interrupted()) {
                 car.waitForWaxing();  //等待抛光完成
                 System.out.println("Wax Off!");
-                TimeUnit.SECONDS.sleep(2);
+                TimeUnit.SECONDS.sleep(1);
                 car.buffed();  //打蜡完成
             }
         }catch (Exception ex) {
@@ -77,6 +79,14 @@ class WaxOff implements Runnable {
 
 public class WaxOMatic {
 
+    public static void main(String[] args) throws Exception {
+        Car car = new Car();
+        ExecutorService service = Executors.newCachedThreadPool();
+        service.execute(new WaxOn(car));
+        service.execute(new WaxOff(car));
 
+        TimeUnit.SECONDS.sleep(5);
+        service.shutdownNow();
+    }
 
 }
