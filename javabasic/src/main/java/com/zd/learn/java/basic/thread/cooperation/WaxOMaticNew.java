@@ -1,5 +1,7 @@
 package com.zd.learn.java.basic.thread.cooperation;
 
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
@@ -108,7 +110,13 @@ class WaxOff2 implements Runnable {
 }
 
 public class WaxOMaticNew {
-    public static void main(String[] args) {
-        
+    public static void main(String[] args) throws Exception{
+        Car2 car = new Car2();
+        ExecutorService exec = Executors.newCachedThreadPool();
+        exec.execute(new WaxOff2(car));
+        exec.execute(new WaxOn2(car));
+
+        TimeUnit.SECONDS.sleep(5);
+        exec.shutdownNow();
     }
 }
