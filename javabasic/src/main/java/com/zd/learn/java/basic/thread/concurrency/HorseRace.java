@@ -105,4 +105,18 @@ public class HorseRace {
         }
     }
 
+    public static void main(String[] args) {
+        int nHorses = 7;
+        int pause = 200;
+        if(args.length > 0) {
+            int np = new Integer(args[0]);
+            nHorses = np > 0 ? np : nHorses;
+        }
+
+        if(args.length > 1) {
+            int p = Integer.valueOf(args[1]);
+            pause = p > -1 ? p : pause;
+        }
+        new HorseRace(nHorses, pause);
+    }
 }
