@@ -1,0 +1,4 @@
+com/learn/permission/configuration/bean/DBBean.class
+com/learn/permission/configuration/RootConfiguration.class
+com/learn/permission/PermissionApplication.class
+com/learn/permission/configuration/WebConfiguration.class

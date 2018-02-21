@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<!-- http://blog.csdn.net/testcs_dn/article/details/77881776 -->
+<!-- 权限模块 -->
+<generatorConfiguration>
+
+    <!-- 数据库驱动包 位置-->
+    <classPathEntry location="/Users/mac/IdeaProjects/java/permission/generator/mysql-connector-java-6.0.6.jar"/>
+
+    <context id="DatabaseToJava" targetRuntime="MyBatis3">
+
+        <!-- 生成的Java文件的编码 -->
+        <property name="javaFileEncoding" value="UTF-8"/>
+        <!-- 不生成注释 -->
+        <commentGenerator>
+            <property name="suppressAllComments" value="true" />
+            <property name="suppressDate" value="true"/>
+        </commentGenerator>
+        <!-- 数据库链接信息 -->
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://cd-cdb-8xbce3kb.sql.tencentcdb.com:63950/permission?characterEncoding=utf8"
+                        userId="root"
+                        password="root1234">
+            <property name="useInformationSchema" value="true"/>
+        </jdbcConnection>
+
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="false" />
+        </javaTypeResolver>
+
+        <!-- model 配置 -->
+        <javaModelGenerator
+                targetPackage="com.learn.permission.permission.model"
+                targetProject="/Users/mac/IdeaProjects/java/permission/generator/src">
+            <property name="enableSubPackages" value="true" />
+            <property name="trimStrings" value="true" />
+        </javaModelGenerator>
+
+        <!-- 生成的映射文件位置 -->
+        <sqlMapGenerator
+                targetPackage="mapper.permission" targetProject="/Users/mac/IdeaProjects/java/permission/generator/src">
+            <property name="enableSubPackages" value="true" />
+        </sqlMapGenerator>
+
+        <!-- 生成DAO的包名和位置 -->
+        <javaClientGenerator type="XMLMAPPER"
+                             targetPackage="com.learn.permission.permission.dao"
+                             targetProject="/Users/mac/IdeaProjects/java/permission/generator/src">
+            <property name="enableSubPackages" value="true" />
+        </javaClientGenerator>
+
+        <table tableName="sys_user" domainObjectName="SysUser" enableCountByExample="true"
+               enableUpdateByExample="true" enableDeleteByExample="true" enableSelectByExample="true"
+               selectByExampleQueryId="true" enableSelectByPrimaryKey="true" enableUpdateByPrimaryKey="true"
+               enableDeleteByPrimaryKey="true" />
+
+        <table tableName="sys_dept" domainObjectName="SysDept" enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" />
+
+        <table tableName="sys_acl" domainObjectName="SysAcl" enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" />
+
+        <table tableName="sys_acl_module" domainObjectName="SysAclModule" enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" />
+
+        <table tableName="sys_role" domainObjectName="SysRole" enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" />
+
+        <table tableName="sys_role_acl" domainObjectName="SysRoleAcl" enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" />
+
+        <table tableName="sys_role_user" domainObjectName="SysRoleUser" enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" />
+
+        <table tableName="sys_log" domainObjectName="SysLog" enableCountByExample="true" enableUpdateByExample="true"
+               enableDeleteByExample="true" enableSelectByExample="true" selectByExampleQueryId="true" />
+
+
+    </context>
+</generatorConfiguration>
