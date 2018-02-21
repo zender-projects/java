@@ -1,5 +1,6 @@
 package com.learn.permission.common.interceptor;
 
+import com.learn.permission.common.bean.RequestHolder;
 import com.learn.permission.common.util.JsonMapperUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
@@ -44,5 +45,11 @@ public class HttpInterceptor extends HandlerInterceptorAdapter{
                     Thread.currentThread().getName(),
                     url,
                     (endTime - startTime));
+
+        removeThreadlocalInfo();
+    }
+
+    private void removeThreadlocalInfo(){
+        RequestHolder.remove();
     }
 }

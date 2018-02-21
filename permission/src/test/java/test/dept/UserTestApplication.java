@@ -41,13 +41,12 @@ public class UserTestApplication {
     @Test
     //@Rollback
     public void saveUserTest() throws Exception {
-
         ResultActions actions = mockMvc.perform(MockMvcRequestBuilders.post("/sys/user/save")
-                                            .param("username", "zhangsan")
-                                            .param("mail", "aaa@163.com")
-                                            .param("telephone", "212122323")
+                                            .param("username", "zhangdd")
+                                            .param("mail", "zhangdd@163.com")
+                                            .param("telephone", "1212122")
                                             .param("deptId", "4")
-                                            .param("status", "0")
+                                            .param("status", "1")
                 .contentType(MediaType.APPLICATION_FORM_URLENCODED)
                                             );
         log.info("Save user result:{}", actions.andReturn().getResponse().getContentAsString());
@@ -63,7 +62,22 @@ public class UserTestApplication {
                 .param("deptId", "4")
                 .param("status", "0")
                                     .contentType(MediaType.APPLICATION_FORM_URLENCODED));
-
         log.info("Update user result:{}", actions.andReturn().getResponse().getContentAsString());
+    }
+
+
+    @Test
+    public void pageTest() throws Exception {
+        ResultActions actions = mockMvc.perform(MockMvcRequestBuilders.post("/sys/user/page?deptId=4")
+                                    .param("pageNo", "1")
+                                    .param("pageSize", "10")
+                                        .contentType(MediaType.APPLICATION_FORM_URLENCODED));
+        log.info("Page user result:{}", actions.andReturn().getResponse().getContentAsString());
+    }
+
+    @Test
+    public void deleteTest() throws Exception {
+        ResultActions actions = mockMvc.perform(MockMvcRequestBuilders.get("/sys/user/delete?id=10"));
+        log.info("Delete user result:{}", actions.andReturn().getResponse().getContentAsString());
     }
 }

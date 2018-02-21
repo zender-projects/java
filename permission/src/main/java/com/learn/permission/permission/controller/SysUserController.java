@@ -1,8 +1,11 @@
 package com.learn.permission.permission.controller;
 
+import com.learn.permission.common.bean.PageQuery;
 import com.learn.permission.common.result.JsonDataResult;
+import com.learn.permission.common.result.PageDataResult;
 import com.learn.permission.common.validate.Validator;
 import com.learn.permission.common.validate.rule.Rules;
+import com.learn.permission.permission.model.SysUser;
 import com.learn.permission.permission.param.UserParam;
 import com.learn.permission.permission.service.SysUserService;
 import lombok.extern.slf4j.Slf4j;
@@ -38,8 +41,33 @@ public class SysUserController {
 
     @RequestMapping(value = "/update", method = {RequestMethod.POST, RequestMethod.GET})
     @ResponseBody
-    public JsonDataResult uupdate(UserParam user) {
+    public JsonDataResult update(UserParam user) {
+
+        Validator.validate(user.getId(), "id", Rules.REQUIRED());
+
         userService.update(user);
         return JsonDataResult.success();
+    }
+
+
+    @RequestMapping(value = "/delete", method = {RequestMethod.POST, RequestMethod.GET})
+    @ResponseBody
+    public JsonDataResult delete(@RequestParam("id") Integer userId) {
+
+        Validator.validate(userId, "id", Rules.REQUIRED());
+
+        userService.delete(userId);
+        return JsonDataResult.success();
+    }
+
+
+    @RequestMapping(value = "/page", method = {RequestMethod.POST, RequestMethod.GET})
+    @ResponseBody
+    public PageDataResult<SysUser> pageQuery(Integer deptId, PageQuery pageQuery) {
+
+        Validator.validate(deptId, "deptId", Rules.REQUIRED());
+
+        PageDataResult<SysUser> pageDataResult = userService.getPageByDeptId(deptId, pageQuery);
+        return pageDataResult;
     }
 }

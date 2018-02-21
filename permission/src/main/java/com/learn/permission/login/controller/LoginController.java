@@ -32,8 +32,13 @@ public class LoginController {
         return "signin";
     }
 
+    @RequestMapping(value = "/admin/index")
+    public String adminIndexPage(){
+        return "views/admin";
+    }
+
     @RequestMapping("/login")
-    public String login(@RequestParam("username") String username,
+    public void login(@RequestParam("username") String username,
                         @RequestParam("password") String password,
                         HttpServletRequest request,
                         HttpServletResponse response) {
@@ -72,7 +77,8 @@ public class LoginController {
                 }else{
                     //log.info("3");
                     ///response.sendRedirect("/admin/index");
-                    return "admin/index";
+                    //return "views/admin";
+                    response.sendRedirect("/user/admin/index");
                 }
 
             }
@@ -82,8 +88,8 @@ public class LoginController {
             if(StringUtils.isNoneBlank(callbackUrl)) {
                 request.setAttribute("callback", callbackUrl);
             }
-            //request.getRequestDispatcher("signin.html").forward(request,response);
-            return "signin";
+            request.getRequestDispatcher("/user/login/page").forward(request,response);
+            //return "signin";
         }catch (Exception ex) {
             //log.info("6");
             throw new LoginException("登录失败，" + ex.getMessage());
@@ -91,5 +97,18 @@ public class LoginController {
 
         //log.info("7");
     }
+
+    @RequestMapping(value = "/logout", method = {RequestMethod.POST, RequestMethod.GET})
+    public void logout(HttpServletRequest request, HttpServletResponse response) {
+        try {
+            request.getSession().invalidate();
+            response.sendRedirect("/user/login/page");
+        }catch (Exception ex) {
+            log.info("用户退出失败");
+            ex.printStackTrace();
+            throw new LoginException("用户退出失败");
+        }
+    }
+
 
 }

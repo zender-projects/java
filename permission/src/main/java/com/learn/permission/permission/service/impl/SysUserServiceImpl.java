@@ -1,6 +1,8 @@
 package com.learn.permission.permission.service.impl;
 
+import com.learn.permission.common.bean.PageQuery;
 import com.learn.permission.common.exception.ParameterException;
+import com.learn.permission.common.result.PageDataResult;
 import com.learn.permission.common.util.MD5Util;
 import com.learn.permission.common.util.PasswordUtil;
 import com.learn.permission.permission.dao.SysUserMapper;
@@ -15,6 +17,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
 import java.util.Date;
+import java.util.List;
 import java.util.Objects;
 
 @Service
@@ -34,12 +37,13 @@ public class SysUserServiceImpl implements SysUserService{
             throw new ParameterException("手机号[" + userParam.getTelephone() +"]已被占用");
         }
         String password = PasswordUtil.randomPassword();
+        log.info("注册用户：" + userParam.getUsername() + ", 密码：" + password);
         //密码加密
         String encPassword = MD5Util.encrypt(password);
         SysUser newUser = SysUser.builder().username(userParam.getUsername())
                 .telephone(userParam.getTelephone())
                 .mail(userParam.getMail())
-                .password(password)
+                .password(encPassword)
                 .deptId(userParam.getDeptId())
                 .status(userParam.getStatus())
                 .remark(userParam.getRemark()).build();
@@ -86,11 +90,31 @@ public class SysUserServiceImpl implements SysUserService{
     }
 
     @Override
+    public void delete(Integer id) {
+        userMapper.deleteByPrimaryKey(id);
+    }
+
+    @Override
     public SysUser queryByKeyword(String keyword) {
         if(Objects.isNull(keyword)) {
             throw new ParameterException("关键字为空");
         }
         return userMapper.selectByKeyword(keyword);
+    }
+
+    @Override
+    public PageDataResult<SysUser> getPageByDeptId(Integer deptId, PageQuery pageQuery) {
+
+        SysUserExample example = new SysUserExample();
+        SysUserExample.Criteria criteria = example.createCriteria();
+        criteria.andDeptIdEqualTo(deptId);
+        List<SysUser> deptUsers = userMapper.selectByExample(example);
+        Integer count = deptUsers.size();
+        if(count > 0) {
+            List<SysUser> users = userMapper.selectPage(deptId, pageQuery.getOffset(), pageQuery.getPageSize());
+            return PageDataResult.<SysUser>builder().total(count).data(users).build();
+        }
+        return PageDataResult.<SysUser>builder().build();
     }
 
     //检查邮箱是否以及存在

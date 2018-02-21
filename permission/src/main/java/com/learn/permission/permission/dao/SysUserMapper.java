@@ -31,4 +31,9 @@ public interface SysUserMapper {
 
     @Select("select * from sys_user where mail = #{keyword} or telephone = #{keyword}")
     SysUser selectByKeyword(@Param("keyword") String keyword);
+
+    @Select("select * from sys_user where dept_id = #{deptId} limit #{offset}, #{limit}")
+    List<SysUser> selectPage(@Param("deptId") Integer deptId,
+                             @Param("offset") Integer offset,
+                             @Param("limit") Integer limit);
 }

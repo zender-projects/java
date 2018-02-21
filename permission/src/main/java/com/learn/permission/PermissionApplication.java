@@ -16,25 +16,9 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @Import({RootConfiguration.class, WebConfiguration.class})
 public class PermissionApplication {
 
-
+    //注册用户：zhangdong2, 密码：F7e4D9v4N
+    //注册用户：zhangdd, 密码：U9m3K9p2
     public static void main(String[] args) {
-       ApplicationContext context = SpringApplication.run(PermissionApplication.class, args);
-
-      /* DataSource dataSource = context.getBean(DataSource.class);
-       System.out.println(dataSource.getClass().getName());
-
-       Collection<MapperLoader> loaders = context.getBeansOfType(MapperLoader.class).values();
-
-       loaders.stream().flatMap(mapperLoader -> Arrays.asList(mapperLoader.load()).stream())
-       .forEach(mapper -> {
-           System.out.println(mapper);
-       });
-
-       String ps = loaders.stream().map(p -> p.aliasPackage()).collect(Collectors.joining(",")).toString();
-        System.out.println(ps);*/
-
-        //SysDeptMapper deptDao = context.getBean(SysDeptMapper.class);
-       // List<SysDept> depts = deptDao.selectAll();
-        //System.out.println(depts);
+       SpringApplication.run(PermissionApplication.class, args);
     }
 }
