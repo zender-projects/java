@@ -60,7 +60,7 @@ class Horse implements Runnable {
 public class HorseRace {
 
     static final int FINISH_LINE = 75;
-    private List<Horse> horses = new ArrayList<>();
+    private List<Horse> horses = new ArrayList<Horse>();
     private ExecutorService executorService = Executors.newCachedThreadPool();
 
     private CyclicBarrier cyclicBarrier;

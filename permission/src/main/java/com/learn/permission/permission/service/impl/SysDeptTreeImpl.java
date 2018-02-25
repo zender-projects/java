@@ -3,8 +3,12 @@ package com.learn.permission.permission.service.impl;
 import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.Multimap;
 import com.learn.permission.common.util.LevelUtil;
+import com.learn.permission.permission.dao.SysAclModuleMapper;
 import com.learn.permission.permission.dao.SysDeptMapper;
+import com.learn.permission.permission.dto.AclModuleLevelDto;
 import com.learn.permission.permission.dto.DeptLevelDto;
+import com.learn.permission.permission.model.SysAclModule;
+import com.learn.permission.permission.model.SysAclModuleExample;
 import com.learn.permission.permission.model.SysDept;
 import com.learn.permission.permission.model.SysDeptExample;
 import com.learn.permission.permission.service.SysTreeService;
@@ -25,6 +29,9 @@ public class SysDeptTreeImpl implements SysTreeService{
     @Autowired
     private SysDeptMapper deptMapper;
 
+    @Autowired
+    private SysAclModuleMapper moduleMapper;
+
     @Override
     public List<DeptLevelDto> deptTree() {
         //查询所有的部门数据
@@ -38,6 +45,8 @@ public class SysDeptTreeImpl implements SysTreeService{
 
         return deptListToTree(levelDtos);
     }
+
+
 
     public List<DeptLevelDto> deptListToTree(List<DeptLevelDto> deptLevelDtoList) {
 
@@ -96,5 +105,90 @@ public class SysDeptTreeImpl implements SysTreeService{
                 transformDeptTree(tempDeptLevelDtos, nextLevel, multimap);
             }
         }
+    }
+
+
+    @Override
+    public List<AclModuleLevelDto> aclModelTree() {
+        //查询所有模块信息
+        List<SysAclModule> modules = moduleMapper.selectByExample(new SysAclModuleExample());
+
+        //转换成Dto Bean
+        List<AclModuleLevelDto> dtos = new ArrayList<>();
+        for(SysAclModule module : modules) {
+            dtos.add(AclModuleLevelDto.adapt(module));
+        }
+        return null;
+    }
+
+
+
+    //将AclModuleDtoList 转换成tree
+    public List<AclModuleLevelDto> aclModuleLevelDtoListToTree(List<AclModuleLevelDto> moduleLevelDtos){
+        //判断非空
+        if(CollectionUtils.isEmpty(moduleLevelDtos)){
+            return Collections.emptyList();
+        }
+        //level -> [m1, m2 m3], leve2-> [m4, m5, m6]
+        Multimap<String, AclModuleLevelDto> levelDtoMultimap = ArrayListMultimap.create();
+
+        //root module list
+        List<AclModuleLevelDto> rootModuleList = new ArrayList<>();
+        for(AclModuleLevelDto moduleLevelDto : moduleLevelDtos) {
+            levelDtoMultimap.put(moduleLevelDto.getLevel(), moduleLevelDto);  //同级别下的共享一个key
+            //过滤成顶级Module
+            if(LevelUtil.ROOT.equals(moduleLevelDto.getLevel())){
+                rootModuleList.add(moduleLevelDto);
+            }
+        }
+        //排序
+        Collections.sort(rootModuleList, new Comparator<AclModuleLevelDto>() {
+            @Override
+            public int compare(AclModuleLevelDto o1, AclModuleLevelDto o2) {
+                return o1.getSeq() - o2.getSeq();
+            }
+        });
+
+        transformAclModuleTree(rootModuleList, LevelUtil.ROOT, levelDtoMultimap);
+        return rootModuleList;
+    }
+
+
+    //递归转换
+    public void transformAclModuleTree(List<AclModuleLevelDto> dtoList, String level,
+                                       Multimap<String, AclModuleLevelDto> levelDtoMultimap){
+
+        for(int i = 0;i < dtoList.size();i ++) {
+            AclModuleLevelDto dto = dtoList.get(i);
+            //下一个层级的id
+            String nextLevel = LevelUtil.calculateLevel(level, dto.getId());
+            //获取下一级的module列表
+            List<AclModuleLevelDto> childModuleDtoList = (List<AclModuleLevelDto> )levelDtoMultimap.get(nextLevel);
+            if(!CollectionUtils.isEmpty(childModuleDtoList)){
+                Collections.sort(childModuleDtoList, new Comparator<AclModuleLevelDto>() {
+                    @Override
+                    public int compare(AclModuleLevelDto o1, AclModuleLevelDto o2) {
+                        return o1.getSeq() - o2.getSeq();
+                    }
+                });
+                dto.setAclModuleList(childModuleDtoList);
+                transformAclModuleTree(childModuleDtoList, nextLevel, levelDtoMultimap);
+            }
+
+        }
+
+    }
+
+
+
+    @Override
+    public List<AclModuleLevelDto> roleTree() {
+
+        //查询当前用户已分配的权限点
+
+        //查当前角色分配的权限点
+
+
+        return null;
     }
 }
