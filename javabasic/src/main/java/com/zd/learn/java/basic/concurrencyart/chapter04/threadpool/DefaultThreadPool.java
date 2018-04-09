@@ -1,13 +1,9 @@
 package com.zd.learn.java.basic.concurrencyart.chapter04.threadpool;
 
-import com.sun.xml.internal.ws.api.pipe.FiberContextSwitchInterceptor;
-
-import javax.swing.plaf.TableHeaderUI;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicLong;
 
 public class DefaultThreadPool<Job extends Runnable> implements ThreadPool{

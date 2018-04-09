@@ -13,112 +13,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ShareFriendStepOne.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../bigdata/hadoop/src/main/java/mapreduce/ShareFriendStepOne.java">
+      <file leaf-file-name="JosephCircle.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/learn/algorithm/JosephCircle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="25" column="15" lean-forward="false" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
+            <state relative-caret-position="345">
+              <caret line="56" column="9" lean-forward="false" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConnectionPoolTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zd/learn/java/basic/concurrencyart/chapter04/connectionpool/ConnectionPoolTest.java">
+      <file leaf-file-name="JosephCircle2.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/learn/algorithm/JosephCircle2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="969">
-              <caret line="57" column="83" lean-forward="false" selection-start-line="57" selection-start-column="83" selection-end-line="57" selection-end-column="83" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ThreadPool.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zd/learn/java/basic/concurrencyart/chapter04/threadpool/ThreadPool.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="21" lean-forward="false" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DefaultThreadPool.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zd/learn/java/basic/concurrencyart/chapter04/threadpool/DefaultThreadPool.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1377">
-              <caret line="83" column="12" lean-forward="false" selection-start-line="83" selection-start-column="12" selection-end-line="83" selection-end-column="12" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WordCount.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../bigdata/hadoop/src/main/java/mapreduce/WordCount.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SimpleHttpServer.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zd/learn/java/basic/concurrencyart/chapter04/httpserver/SimpleHttpServer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="100" column="26" lean-forward="false" selection-start-line="100" selection-start-column="26" selection-end-line="100" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Mutex.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/zd/learn/java/basic/concurrencyart/chapter05/Mutex.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReentrantLock.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.jdk/Contents/Home/lib/src.zip!/java.base/java/util/concurrent/locks/ReentrantLock.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="54" column="1" lean-forward="false" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractQueuedSynchronizer.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.jdk/Contents/Home/lib/src.zip!/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19822">
-              <caret line="1224" column="28" lean-forward="false" selection-start-line="1224" selection-start-column="28" selection-end-line="1224" selection-end-column="28" />
-              <folding>
-                <element signature="e#42359#42360#0" expanded="true" />
-                <element signature="e#42416#42417#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RootConfiguration.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../permission/src/main/java/com/learn/permission/configuration/RootConfiguration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="59" column="17" lean-forward="false" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
+            <state relative-caret-position="-203">
+              <caret line="3" column="44" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -142,8 +51,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/zd/learn/java/basic/thread2/chapter02/DaemonThreadFactory.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zd/learn/java/basic/thread2/chapter02/DaemonFromFactory.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zd/learn/java/basic/thread2/chapter02/SimpleThread.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zd/learn/java/basic/thread2/chapter02/SelfManaged.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zd/learn/java/basic/thread2/chapter02/ThreadVariations.java" />
@@ -190,9 +97,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/zd/learn/java/basic/concurrencyart/chapter04/connectionpool/ConnectionPool.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zd/learn/java/basic/concurrencyart/chapter04/connectionpool/ConnectionPoolTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zd/learn/java/basic/concurrencyart/chapter04/threadpool/ThreadPool.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zd/learn/java/basic/concurrencyart/chapter04/threadpool/DefaultThreadPool.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zd/learn/java/basic/concurrencyart/chapter05/Mutex.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zd/learn/java/basic/concurrencyart/chapter04/httpserver/SimpleHttpServer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/learn/algorithm/JosephCircle.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/zd/learn/java/basic/concurrencyart/chapter04/threadpool/DefaultThreadPool.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/learn/algorithm/JosephCircle2.java" />
       </list>
     </option>
   </component>
@@ -227,9 +136,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -261,7 +171,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="basic" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="javabasic" type="b2602c69:ProjectViewProjectNode" />
@@ -269,8 +179,8 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="basic" type="462c0819:PsiDirectoryNode" />
-              <item name="concurrencyart" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="algorithm" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="javabasic" type="b2602c69:ProjectViewProjectNode" />
@@ -278,15 +188,19 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="basic" type="462c0819:PsiDirectoryNode" />
-              <item name="concurrencyart" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter05" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="javabasic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="javabasic" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -308,7 +222,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ConnectionPoolTest">
+  <component name="RunManager" selected="Application.JosephCircle">
     <configuration name="ConnectionPoolTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -328,14 +242,14 @@
       <module name="javabasic" />
       <envs />
     </configuration>
-    <configuration name="MultiThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="JosephCircle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.zd.learn.java.basic.concurrencyart.chapter04.*" />
+          <option name="PATTERN" value="com.learn.algorithm.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.zd.learn.java.basic.concurrencyart.chapter04.MultiThread" />
+      <option name="MAIN_CLASS_NAME" value="com.learn.algorithm.JosephCircle" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -486,19 +400,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.MultiThread" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Priority" />
-      <item index="2" class="java.lang.String" itemvalue="Application.WaitNotify" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Piped" />
-      <item index="4" class="java.lang.String" itemvalue="Application.ConnectionPoolTest" />
+      <item index="0" class="java.lang.String" itemvalue="Application.Priority" />
+      <item index="1" class="java.lang.String" itemvalue="Application.WaitNotify" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Piped" />
+      <item index="3" class="java.lang.String" itemvalue="Application.ConnectionPoolTest" />
+      <item index="4" class="java.lang.String" itemvalue="Application.JosephCircle" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.ConnectionPoolTest" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Piped" />
-        <item index="2" class="java.lang.String" itemvalue="Application.WaitNotify" />
-        <item index="3" class="java.lang.String" itemvalue="Application.Priority" />
-        <item index="4" class="java.lang.String" itemvalue="Application.MultiThread" />
+        <item index="0" class="java.lang.String" itemvalue="Application.JosephCircle" />
+        <item index="1" class="java.lang.String" itemvalue="Application.ConnectionPoolTest" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Piped" />
+        <item index="3" class="java.lang.String" itemvalue="Application.WaitNotify" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Priority" />
       </list>
     </recent_temporary>
   </component>
@@ -525,6 +439,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="717" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -538,7 +453,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3101777" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3101777" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.124394186" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -582,20 +497,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zd/learn/java/basic/thread2/chapter03/EventChecker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="37" column="18" lean-forward="false" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zd/learn/java/basic/thread2/chapter03/MutexEvenGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zd/learn/java/basic/thread2/chapter02/AttemptLocking.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
@@ -719,20 +620,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="e#261#262#0" expanded="false" />
-            <element signature="e#289#290#0" expanded="false" />
-            <element signature="e#317#318#0" expanded="false" />
-            <element signature="e#357#358#0" expanded="false" />
-            <element signature="e#381#382#0" expanded="false" />
-            <element signature="e#419#420#0" expanded="false" />
-            <element signature="e#451#452#0" expanded="false" />
-            <element signature="e#480#481#0" expanded="false" />
-            <element signature="e#505#506#0" expanded="false" />
-            <element signature="e#530#531#0" expanded="false" />
-            <element signature="e#561#562#0" expanded="false" />
-            <element signature="e#611#612#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -740,13 +627,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1710">
           <caret line="114" column="38" lean-forward="false" selection-start-line="114" selection-start-column="38" selection-end-line="114" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#487#488#0" expanded="false" />
-            <element signature="e#526#527#0" expanded="false" />
-            <element signature="e#2443#2444#0" expanded="false" />
-            <element signature="e#2493#2494#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -754,17 +634,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="495">
           <caret line="33" column="13" lean-forward="false" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#507#508#0" expanded="false" />
-            <element signature="e#559#560#0" expanded="false" />
-            <element signature="e#959#960#0" expanded="false" />
-            <element signature="e#1009#1010#0" expanded="false" />
-            <element signature="e#1233#1234#0" expanded="false" />
-            <element signature="e#1285#1286#0" expanded="false" />
-            <element signature="e#1590#1591#0" expanded="false" />
-            <element signature="e#1652#1653#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -772,9 +641,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1275">
           <caret line="89" column="19" lean-forward="false" selection-start-line="89" selection-start-column="19" selection-end-line="89" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -783,9 +649,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1350">
           <caret line="98" column="28" lean-forward="false" selection-start-line="98" selection-start-column="28" selection-end-line="98" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -793,9 +656,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1875">
           <caret line="131" column="0" lean-forward="false" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -803,9 +663,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1935">
           <caret line="137" column="0" lean-forward="false" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -813,17 +670,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1335">
           <caret line="92" column="0" lean-forward="false" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#3009#3010#0" expanded="false" />
-            <element signature="e#3049#3050#0" expanded="false" />
-            <element signature="e#3095#3096#0" expanded="false" />
-            <element signature="e#3133#3134#0" expanded="false" />
-            <element signature="e#3336#3337#0" expanded="false" />
-            <element signature="e#3368#3369#0" expanded="false" />
-            <element signature="e#3783#3784#0" expanded="false" />
-            <element signature="e#3831#3832#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -831,19 +677,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2805">
           <caret line="187" column="37" lean-forward="false" selection-start-line="187" selection-start-column="37" selection-end-line="187" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#335#336#0" expanded="false" />
-            <element signature="e#381#382#0" expanded="false" />
-            <element signature="e#487#488#0" expanded="false" />
-            <element signature="e#533#534#0" expanded="false" />
-            <element signature="e#644#645#0" expanded="false" />
-            <element signature="e#678#679#0" expanded="false" />
-            <element signature="e#1200#1201#0" expanded="false" />
-            <element signature="e#1248#1249#0" expanded="false" />
-            <element signature="e#2006#2007#0" expanded="false" />
-            <element signature="e#2054#2055#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -851,7 +684,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -859,7 +691,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
           <caret line="27" column="28" lean-forward="false" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -867,10 +698,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
-          <folding>
-            <element signature="e#241#242#0" expanded="false" />
-            <element signature="e#286#287#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -878,7 +705,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-7">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -886,9 +712,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-7">
           <caret line="34" column="14" lean-forward="false" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -903,11 +726,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1054#1055#0" expanded="false" />
-            <element signature="e#1102#1103#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -915,7 +733,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="33" lean-forward="false" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -923,9 +740,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="663">
           <caret line="39" column="84" lean-forward="false" selection-start-line="39" selection-start-column="84" selection-end-line="39" selection-end-column="84" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -933,11 +747,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="21" lean-forward="false" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#803#804#0" expanded="false" />
-            <element signature="e#852#853#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -945,9 +754,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="10" lean-forward="false" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -955,9 +761,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="935">
           <caret line="55" column="10" lean-forward="false" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -965,25 +768,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="25" column="15" lean-forward="false" selection-start-line="25" selection-start-column="15" selection-end-line="25" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zd/learn/java/basic/concurrencyart/chapter04/connectionpool/ConnectionPoolTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
+        <state relative-caret-position="0">
           <caret line="57" column="83" lean-forward="false" selection-start-line="57" selection-start-column="83" selection-end-line="57" selection-end-column="83" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../bigdata/hadoop/src/main/java/mapreduce/WordCount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -991,25 +782,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="646">
           <caret line="59" column="17" lean-forward="false" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zd/learn/java/basic/concurrencyart/chapter04/threadpool/DefaultThreadPool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1377">
-          <caret line="83" column="12" lean-forward="false" selection-start-line="83" selection-start-column="12" selection-end-line="83" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/zd/learn/java/basic/concurrencyart/chapter04/threadpool/ThreadPool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="21" lean-forward="false" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1017,28 +789,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="54" column="1" lean-forward="false" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-9.jdk/Contents/Home/lib/src.zip!/java.base/java/util/concurrent/locks/AbstractQueuedSynchronizer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19822">
+        <state relative-caret-position="19788">
           <caret line="1224" column="28" lean-forward="false" selection-start-line="1224" selection-start-column="28" selection-end-line="1224" selection-end-column="28" />
-          <folding>
-            <element signature="e#42359#42360#0" expanded="true" />
-            <element signature="e#42416#42417#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/zd/learn/java/basic/concurrencyart/chapter05/Mutex.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
+        <state relative-caret-position="561">
           <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1046,9 +810,43 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="303">
           <caret line="100" column="26" lean-forward="false" selection-start-line="100" selection-start-column="26" selection-end-line="100" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zd/learn/java/basic/concurrencyart/chapter04/threadpool/ThreadPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="21" lean-forward="false" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../bigdata/hadoop/src/main/java/mapreduce/WordCount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/zd/learn/java/basic/concurrencyart/chapter04/threadpool/DefaultThreadPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="45" lean-forward="false" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/learn/algorithm/JosephCircle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="56" column="9" lean-forward="false" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/learn/algorithm/JosephCircle2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-203">
+          <caret line="3" column="44" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
