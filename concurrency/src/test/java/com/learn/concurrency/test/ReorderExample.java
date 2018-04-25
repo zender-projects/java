@@ -1,5 +1,7 @@
 package com.learn.concurrency.test;
 
+import java.util.concurrent.locks.ReentrantLock;
+
 public class ReorderExample {
 
     int a = 0;
@@ -23,6 +25,7 @@ public class ReorderExample {
         new Thread(() -> { example.reader(); }).start();
 
         new Thread(() -> {
+            ReentrantLock
             example.writer();
         }).start();
 
