@@ -25,7 +25,7 @@ public class ReorderExample {
         new Thread(() -> { example.reader(); }).start();
 
         new Thread(() -> {
-            ReentrantLock
+            //ReentrantLock
             example.writer();
         }).start();
 

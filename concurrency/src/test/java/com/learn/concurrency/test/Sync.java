@@ -67,7 +67,7 @@ public class Sync implements Lock{
 
     @Override
     public Condition newCondition() {
-        ReentrantLock
+        //ReentrantLock
         return null;
     }
 }
