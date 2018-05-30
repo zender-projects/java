@@ -26,7 +26,7 @@
       <file leaf-file-name="BoundedQueue.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/learn/concurrency/test/BoundedQueue.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
+            <state relative-caret-position="238">
               <caret line="17" column="41" lean-forward="false" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -40,14 +40,9 @@
       <file leaf-file-name="AbstractQueuedLongSynchronizer.java" pinned="false" current-in-tab="false">
         <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
+            <state relative-caret-position="23902">
               <caret line="1465" column="4" lean-forward="false" selection-start-line="1465" selection-start-column="4" selection-end-line="1465" selection-end-column="4" />
-              <folding>
-                <element signature="e#51332#51340#0" expanded="true" />
-                <element signature="e#51955#51963#0" expanded="true" />
-                <element signature="e#52627#52635#0" expanded="true" />
-                <element signature="e#78131#78139#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -56,20 +51,30 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/learn/concurrency/ConcurrencyApplication.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ThreadPoolTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ThreadPoolTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/learn/concurrency/test/ThreadPoolTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="466">
               <caret line="51" column="44" lean-forward="false" selection-start-line="47" selection-start-column="8" selection-end-line="51" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BlockingQueueTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/learn/concurrency/test/BlockingQueueTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="559">
+              <caret line="61" column="23" lean-forward="false" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
               <folding>
-                <element signature="e#568#569#0" expanded="true" />
-                <element signature="e#647#648#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#460#466#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -78,7 +83,7 @@
       <file leaf-file-name="ThreadPoolExecutor.java" pinned="false" current-in-tab="false">
         <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/util/concurrent/ThreadPoolExecutor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-333">
+            <state relative-caret-position="33456">
               <caret line="2046" column="24" lean-forward="false" selection-start-line="2046" selection-start-column="24" selection-end-line="2046" selection-end-column="24" />
               <folding />
             </state>
@@ -172,6 +177,7 @@
         <option value="$PROJECT_DIR$/src/test/java/com/learn/concurrency/test/BoundedQueue.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/learn/concurrency/ConcurrencyApplication.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/learn/concurrency/test/ThreadPoolTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/learn/concurrency/test/BlockingQueueTest.java" />
       </list>
     </option>
   </component>
@@ -242,9 +248,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -321,7 +327,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -600,13 +606,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/learn/concurrency/test/ConcurrencyTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/learn/concurrency/startthread/InterruptTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1054">
@@ -860,7 +859,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19448">
           <caret line="1199" column="20" lean-forward="false" selection-start-line="1199" selection-start-column="20" selection-end-line="1199" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -925,7 +923,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/learn/concurrency/test/BoundedQueue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
+        <state relative-caret-position="238">
           <caret line="17" column="41" lean-forward="false" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -937,14 +935,9 @@
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/util/concurrent/locks/AbstractQueuedLongSynchronizer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
+        <state relative-caret-position="23902">
           <caret line="1465" column="4" lean-forward="false" selection-start-line="1465" selection-start-column="4" selection-end-line="1465" selection-end-column="4" />
-          <folding>
-            <element signature="e#51332#51340#0" expanded="true" />
-            <element signature="e#51955#51963#0" expanded="true" />
-            <element signature="e#52627#52635#0" expanded="true" />
-            <element signature="e#78131#78139#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -959,14 +952,14 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/learn/concurrency/ConcurrencyApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/src.zip!/java/util/concurrent/ThreadPoolExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-333">
+        <state relative-caret-position="33456">
           <caret line="2046" column="24" lean-forward="false" selection-start-line="2046" selection-start-column="24" selection-end-line="2046" selection-end-column="24" />
           <folding />
         </state>
@@ -976,9 +969,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="466">
           <caret line="51" column="44" lean-forward="false" selection-start-line="47" selection-start-column="8" selection-end-line="51" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/learn/concurrency/test/BlockingQueueTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="61" column="23" lean-forward="false" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
           <folding>
-            <element signature="e#568#569#0" expanded="true" />
-            <element signature="e#647#648#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#460#466#0" expanded="true" />
           </folding>
         </state>
       </provider>
