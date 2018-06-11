@@ -9,8 +9,8 @@ public class OutputStream {
 
 
         //DataStream
-        DataOutputStream dataOutputStream = new DataOutputStream(new FileOutputStream("readme.txt"));
-        DataInputStream dataInputStream = new DataInputStream(new FileInputStream("readme.txt");
+        //DataOutputStream dataOutputStream = new DataOutputStream(new FileOutputStream("readme.txt"));
+        //DataInputStream dataInputStream = new DataInputStream(new FileInputStream("readme.txt");
 
 
     }

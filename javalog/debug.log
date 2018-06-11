@@ -1,0 +1,6 @@
+2018-06-07 08:20:14,484 [INFO ] (log.generator.Slf4jLog4j.main): Current Time: 1528330814469
+2018-06-07 08:20:14,495 [INFO ] (log.generator.Slf4jLog4j.main): Current Time: 1528330814495
+2018-06-07 08:20:14,496 [INFO ] (log.generator.Slf4jLog4j.main): Current Time: 1528330814496
+2018-06-07 08:20:14,496 [WARN ] (log.generator.Slf4jLog4j.main): warn log
+2018-06-07 08:20:14,501 [INFO ] (log.generator.Slf4jLog4j.main): info log
+2018-06-07 08:20:14,501 [ERROR] (log.generator.Slf4jLog4j.main): error log
