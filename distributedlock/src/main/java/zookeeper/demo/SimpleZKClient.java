@@ -2,6 +2,7 @@ package zookeeper.demo;
 
 import org.apache.zookeeper.*;
 import org.apache.zookeeper.data.Stat;
+import org.apache.zookeeper.server.quorum.FastLeaderElection;
 
 import java.util.List;
 import java.util.Objects;
@@ -48,6 +49,8 @@ public class SimpleZKClient {
         //System.out.println(getData(zk));   //hello idea
 
         //delete(zk);
+
+        //FastLeaderElection
 
         set(zk);
     }

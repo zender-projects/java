@@ -1,7 +1,10 @@
 package com.zd.learn.java.basic.generic;
 
+import javax.swing.text.ParagraphView;
 import java.io.Serializable;
+import java.util.Collection;
 import java.util.Objects;
+import java.util.function.Supplier;
 
 public class PairTest1 {
 
@@ -17,6 +20,27 @@ public class PairTest1 {
         ArrayAlg.<String>getMiddle("a","b","c");
         ArrayAlg.getMiddle("a", "b", "c");
 
+        //Pair<String>[] table = new Pair<String>[10];
+
+        Pair<String>[] table = (Pair<String>[])new Pair<?>[10];
+    }
+
+    @SafeVarargs
+    public static <T> void addAll(Collection<T> coll, T ... ts) {
+        for(T t : ts)
+            coll.add(t);
+    }
+
+    public static <T> Pair<T> makePair(Supplier<T> constr) {
+        return new Pair<>(constr.get(), constr.get());
+    }
+
+    public static <T> Pair<T> makePair(Class<T> clazz) {
+        try{
+            return new Pair<>(clazz.newInstance(), clazz.newInstance());
+        }catch (Exception e) {
+            return null;
+        }
     }
 
 }
