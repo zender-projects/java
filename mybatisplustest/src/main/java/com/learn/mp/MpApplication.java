@@ -97,6 +97,82 @@ public class MpApplication {
         List<User> userList4 = userMapper.selectList(queryWrapper1);
         userList4.stream().forEach(System.out::println);
 
+        //date_format(create_time, '%'Y-%m-%d) and id in (select id from user where name like 'J%')
+        System.out.println();
+        QueryWrapper<User> queryWrapper3 = Wrappers.query();
+        queryWrapper3.apply("date_format(create_time, '%Y-%m-%d') = {0}","2019-06-08")
+                .inSql("id","select id from user where name like 'J%'");
+        List<User> userList5 = userMapper.selectList(queryWrapper3);
+        userList5.stream().forEach(System.out::println);
+
+        System.out.println();
+        //name like 'J%' and (age < 40 or email is not null)
+        QueryWrapper<User> queryWrapper4 = Wrappers.query();
+        //SELECT id,name,age,email FROM user WHERE name LIKE ? AND ( age < ? OR email IS NOT NULL )
+        queryWrapper4.likeRight("name","J").and(qw -> qw.lt("age",40).or().isNotNull("email"));
+        List<User> userList6 = userMapper.selectList(queryWrapper4);
+        userList6.stream().forEach(System.out::println);
+
+
+        System.out.println();
+        //name like 'J%' or (age < 40 or age > 20 and email is not null)
+        QueryWrapper<User> queryWrapper5 = Wrappers.query();
+        //SELECT id,name,age,email FROM user WHERE name LIKE ? OR ( age < ? AND age > ? AND email IS NOT NULL )
+        queryWrapper5.likeRight("name","J").or(qw ->
+                qw.lt("age",40)
+                        .gt("age",20)
+                        .isNotNull("email"));
+
+        List<User> userList7 = userMapper.selectList(queryWrapper5);
+        userList7.stream().forEach(System.out::println);
+
+
+
+        //(age < 40 or email is not nul) and name like '%J'
+        System.out.println();
+        QueryWrapper<User> queryWrapper6 = Wrappers.query();
+        //SELECT id,name,age,email FROM user WHERE ( age < ? OR email IS NOT NULL ) AND name LIKE ?
+        queryWrapper6.nested(qw -> qw.lt("age", 40).or().isNotNull("email"))
+                .like("name","J");
+        List<User> userList8 = userMapper.selectList(queryWrapper6);
+        userList8.stream().forEach(System.out::println);
+
+
+        //age in (18,20,28)
+        //age in (18,20,28)
+        QueryWrapper<User> queryWrapper7 = Wrappers.query();
+        //SELECT id,name,age,email FROM user WHERE age IN (?,?,?)
+        queryWrapper7.in("age", Arrays.asList(18,20,28));
+        List<User> userList9 = userMapper.selectList(queryWrapper7);
+        userList9.stream().forEach(System.out::println);
+
+
+        //limit  1
+        System.out.println();
+        QueryWrapper<User> queryWrapper8 = Wrappers.query();
+        queryWrapper8.last("limit 1");
+        //SELECT id,name,age,email FROM user limit 1
+        List<User> userList10 = userMapper.selectList(queryWrapper8);
+        userList10.stream().forEach(System.out::println);
+
+
+        //返回部分字段
+        System.out.println();
+        QueryWrapper<User> queryWrapper9 = Wrappers.query();
+        queryWrapper9.select("id","name");
+        //SELECT id,name,age,email FROM user limit 1
+        List<User> userList11 = userMapper.selectList(queryWrapper9);
+        userList11.stream().forEach(System.out::println);
+
+        System.out.println();
+        QueryWrapper<User> queryWrapper10 = Wrappers.query();
+        //排除create_time和age
+        //SELECT id,name FROM user
+        queryWrapper10.select(User.class, info -> !info.getColumn().equals("create_time") &&
+                                info.getColumn().equals("age"));
+        //SELECT id,name FROM user
+        List<User> userList12 = userMapper.selectList(queryWrapper10);
+        userList12.stream().forEach(System.out::println);
     }
 
 }
