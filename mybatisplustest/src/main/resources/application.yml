@@ -1,0 +1,9 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://39.106.59.211:3306/d_huikemall?useUnicode=true&characterEncoding=utf8
+    username: huikemall
+    password: huikemall
