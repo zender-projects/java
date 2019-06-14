@@ -1,5 +1,6 @@
 package com.learn.mp;
 
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.learn.mp.entity.User;
@@ -10,6 +11,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.SpringBootConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.util.StringUtils;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -173,6 +175,74 @@ public class MpApplication {
         //SELECT id,name FROM user
         List<User> userList12 = userMapper.selectList(queryWrapper10);
         userList12.stream().forEach(System.out::println);
+
+
+
+        //select condition
+        System.out.println();
+        QueryWrapper<User> queryWrapper11 = Wrappers.query();
+        String name = "J";
+        /*if(StringUtils.isEmpty(name)) {
+            queryWrapper11.like("name","J");
+        }*/
+
+        queryWrapper11.like(StringUtils.isEmpty(name), "name", "J");
+        List<User> userList13 = userMapper.selectList(queryWrapper11);
+        userList13.stream().forEach(System.out::println);
+
+
+
+        //带实体对象带查询器
+        System.out.println();
+
+
+        //allEq
+
+        QueryWrapper<User> queryWrapper12 = Wrappers.emptyWrapper();
+        Map<String, Object> params = new HashMap<>();
+        param1.put("name", "Jone");
+        param1.put("age",null);
+        queryWrapper12.allEq(params, true);    // true - null 值转换为 is null, false - 直接忽略null值
+
+        List<User> userList14 = userMapper.selectList(queryWrapper12);
+        userList14.stream().forEach(System.out::println);
+
+
+        /**
+
+         select avg(age) avg_age, min(age) min_age, max(age) max_age from user
+         group by manager_id
+         having sum(age) < 500;
+
+
+
+        QueryWrapper<User> queryWrapper13 = Wrappers.query();
+        queryWrapper13.select("avg(age) avg_age","min(age) min_age","max(age) max_age")
+                .groupBy("manager_id").having("sum(age) < {0}", 500);
+
+        List<User> userList15 = userMapper.selectList(queryWrapper13);
+        userList15.stream().forEach(System.out::println);
+
+         * */
+
+        System.out.println();
+
+        QueryWrapper<User> queryWrapper13 = Wrappers.query();
+        //SELECT COUNT( 1 ) FROM user
+        Integer count = userMapper.selectCount(queryWrapper13);
+        System.out.println(count);
+
+
+        /**
+         * lambda
+         * */
+
+        LambdaQueryWrapper<User> queryWrapper14 = Wrappers.<User>lambdaQuery();
+        queryWrapper14.like(User::getName, "J").lt(User::getAge, 49);
+        List<User> userList15 = userMapper.selectList(queryWrapper14);
+        userList15.stream().forEach(System.out::println);
+
+
     }
 
 }
